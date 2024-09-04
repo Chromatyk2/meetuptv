@@ -2,7 +2,11 @@ import React from "react";
 import { Planet } from 'react-planet';
 import MainButton from "./MainButton";
 import logo from "../social-networks.png";
-import logoTwitch from "../tic.png";
+import logoTwitch from "../twitch.png";
+import logoYoutube from "../youtube.png";
+import logoInsta from "../instagram.png";
+import logoFacebook from "../facebook.png";
+import logoTiktok from "../tic-tac.png";
 function Nav() {
     return (
         <Planet
@@ -35,9 +39,10 @@ function Nav() {
                     width: 70,
                     borderRadius: '50%',
                     backgroundColor: '#802030',
+                    display:"flex"
                 }}
             >
-                <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTwitch} className="App-logo-loader" alt="logo"/>
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTwitch} className="App-logo-loader" alt="logo"/>
             </div>
             <div
                 style={{
@@ -45,32 +50,44 @@ function Nav() {
                     width: 70,
                     borderRadius: '50%',
                     backgroundColor: '#802030',
+                    display:"flex"
                 }}
-            />
+            >
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoYoutube} className="App-logo-loader" alt="logo"/>
+            </div>
             <div
                 style={{
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
                     backgroundColor: '#802030',
+                    display:"flex"
                 }}
-            />
+            >
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoInsta} className="App-logo-loader" alt="logo"/>
+            </div>
             <div
                 style={{
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
                     backgroundColor: '#802030',
+                    display:"flex"
                 }}
-            />
+            >
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTiktok} className="App-logo-loader" alt="logo"/>
+            </div>
             <div
                 style={{
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
                     backgroundColor: '#802030',
+                    display:"flex"
                 }}
-            />
+            >
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoFacebook} className="App-logo-loader" alt="logo"/>
+            </div>
             <div></div>
             <div></div>
             <div></div>
