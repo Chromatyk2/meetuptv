@@ -15,7 +15,7 @@ function Player() {
             }).then(function(response) {
                 console.log(response);
             Axios.get(
-                'https://api.twitch.tv/helix/streams?user_login=Chromatyk',
+                'https://api.twitch.tv/helix/streams?user_login=ballasta_tv',
                 {
                     headers: {
                         'Authorization': `Bearer ` + response.data.access_token,
@@ -29,7 +29,29 @@ function Player() {
     }, [])
     return (
         <>
-
+            {stream &&
+                <div className="twitch">
+                    <div className="twitch-video">
+                        <iframe
+                            src="https://player.twitch.tv/?channel=ballasta_tv&parent=meetuptv.netlify.app&autoplay=true&muted=false"
+                            frameBorder="0"
+                            scrolling="no"
+                            allowFullScreen="true"
+                            height="720"
+                            width="1280">
+                        </iframe>
+                    </div>
+                    <div className="twitch-chat">
+                        <iframe
+                            frameBorder="0"
+                            scrolling="no"
+                            src="https://www.twitch.tv/embed/chromatyk/chat?parent=meetuptv.netlify.app"
+                            height="100%"
+                            width="100%">
+                        </iframe>
+                    </div>
+                </div>
+            }
         </>
 
     );
