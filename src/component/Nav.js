@@ -11,8 +11,8 @@ function Nav() {
                         width: 100,
                         borderRadius: '50%',
                         backgroundColor: '#1da8a4',
-                        display:"flex",
-                        justifyContent:"center"
+                        display:"block",
+                        margin:"auto"
                     }}
                 />
             }
