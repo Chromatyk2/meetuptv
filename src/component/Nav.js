@@ -26,7 +26,6 @@ function Nav() {
             orbitRadius={130}
             rotation={70}
             hideOrbit={true}
-            bounce={true}
         >
             <div
                 style={{
