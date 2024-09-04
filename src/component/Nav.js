@@ -44,7 +44,7 @@ function Nav() {
                 }}
             >
                 <a href={"https://www.twitch.tv/meetup_tv"} target={"_blank"}>
-                    <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTwitch}
+                    <img style={{display: "block", margin: "auto", height: "35px"}} src={logoTwitch}
                          className="App-logo-loader" alt="logo"/>
                 </a>
             </div>
@@ -60,7 +60,7 @@ function Nav() {
             }}
         >
             <a href={"https://www.youtube.com/@meetup_tv"} target={"_blank"}>
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoYoutube}
+                <img style={{display: "block", margin: "auto", height: "35px"}} src={logoYoutube}
                      className="App-logo-loader" alt="logo"/></a>
         </div>
         <div
@@ -75,7 +75,7 @@ function Nav() {
             }}
         >
             <a href={"https://www.instagram.com/meetup_tv"} target={"_blank"}>
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoInsta}
+                <img style={{display: "block", margin: "auto", height: "35px"}} src={logoInsta}
                      className="App-logo-loader" alt="logo"/></a>
         </div>
         <div
@@ -90,7 +90,7 @@ function Nav() {
             }}
         >
             <a href={"https://www.tiktok.com/@meetup.tv"} target={"_blank"}>
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTiktok}
+                <img style={{display: "block", margin: "auto", height: "35px"}} src={logoTiktok}
                      className="App-logo-loader" alt="logo"/></a>
         </div>
         <div
@@ -105,7 +105,7 @@ function Nav() {
             }}
         >
             <a href={"https://www.facebook.com/meetupttv/"} target={"_blank"}>
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoFacebook}
+                <img style={{display: "block", margin: "auto", height: "35px"}} src={logoFacebook}
                      className="App-logo-loader" alt="logo"/></a>
         </div>
         <div></div>
