@@ -11,7 +11,7 @@ function Player() {
             {
                 headers:{
                     'Authorization': `Bearer p09h2c299pn8ojiro3aezbh14bp7wv`,
-                    'Client-Id': process.env.REACT_APP_CLIENT_ID
+                    'Client-Id': '4srh1li6udcsg3j7ej1kyphbl33n7o'
                 }
             }
         ).then(function(response){
