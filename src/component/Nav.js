@@ -16,8 +16,9 @@ function Nav() {
             }
             open
             autoClose
-            orbitRadius={80}
+            orbitRadius={130}
             rotation={70}
+            hideOrbit={true}
         >
             <div
                 style={{
