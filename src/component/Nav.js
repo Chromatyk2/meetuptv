@@ -18,7 +18,7 @@ function Nav() {
                     }}
                     className={"mainPlanet"}
                 >
-                    <img style={{display:"block",margin:"auto",width:"60px"}} src={logo} className="App-logo-loader" alt="logo"/>
+                    <img style={{display:"block",margin:"auto",height:"60px"}} src={logo} className="App-logo-loader" alt="logo"/>
                 </div>
             }
             open
@@ -26,7 +26,9 @@ function Nav() {
             orbitRadius={130}
             rotation={70}
             hideOrbit={true}
-
+            bounce={true}
+            bounceRadius={10}
+            bounceDirection={"TOP"}
         >
             <div
                 style={{
