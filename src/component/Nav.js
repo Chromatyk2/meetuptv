@@ -10,11 +10,14 @@ function Nav() {
                         height: 100,
                         width: 100,
                         borderRadius: '50%',
-                        backgroundColor: '#1da8a4',
+                        backgroundColor: '#ff6254',
                         display:"block",
-                        margin:"auto"
+                        margin:"auto",
+                        marginTop: "70px"
                     }}
-                />
+                >
+                    X
+                </div>
             }
             open
             autoClose

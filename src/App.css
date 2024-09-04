@@ -50,7 +50,7 @@
 }
 .jss2 {
     z-index: 1;
-    position: inherit;
+    position: inherit!important;
 }
 @media screen and (min-width: 850px) {
     .twitch {
