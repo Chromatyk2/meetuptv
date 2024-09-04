@@ -52,6 +52,9 @@
     z-index: 1;
     position: inherit!important;
 }
+.mainPlanet:hover{
+    cursor: pointer;
+}
 @media screen and (min-width: 850px) {
     .twitch {
         position: relative;

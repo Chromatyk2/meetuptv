@@ -12,12 +12,13 @@ function Nav() {
                         width: 100,
                         borderRadius: '50%',
                         backgroundColor: '#ff6254',
-                        display: "block",
+                        display: "flex",
                         margin: "auto",
                         marginTop: "70px"
                     }}
+                    className={"mainPlanet"}
                 >
-                    <img src={logo} className="App-logo-loader" alt="logo"/>
+                    <img style={{display:"block",margin:"auto",width:"60px"}} src={logo} className="App-logo-loader" alt="logo"/>
                 </div>
             }
             open
