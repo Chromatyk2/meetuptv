@@ -23,8 +23,9 @@ function Nav() {
                     }}
                     className={"mainPlanet"}
                 >
-                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logo}
-                         className="App-logo-loader" alt="logo"/>
+                    <a href={"https://www.twitch.tv/meetup_tv"} target={"_blank"}>
+                        <img style={{display: "block", margin: "auto", height: "60px"}} src={logo}
+                             className="App-logo-loader" alt="logo"/></a>
                 </div>
             }
             open
@@ -42,56 +43,66 @@ function Nav() {
                     display:"flex"
                 }}
             >
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTwitch} className="App-logo-loader" alt="logo"/>
+                <a href={"https://www.twitch.tv/meetup_tv"} target={"_blank"}>
+                    <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTwitch} className="App-logo-loader" alt="logo"/>
+                </a>
             </div>
-            <div
-                style={{
-                    height: 70,
-                    width: 70,
-                    borderRadius: '50%',
-                    backgroundColor: '#802030',
-                    display:"flex"
-                }}
-            >
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoYoutube} className="App-logo-loader" alt="logo"/>
-            </div>
-            <div
-                style={{
-                    height: 70,
-                    width: 70,
-                    borderRadius: '50%',
-                    backgroundColor: '#802030',
-                    display:"flex"
-                }}
-            >
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoInsta} className="App-logo-loader" alt="logo"/>
-            </div>
-            <div
-                style={{
-                    height: 70,
-                    width: 70,
-                    borderRadius: '50%',
-                    backgroundColor: '#802030',
-                    display:"flex"
-                }}
-            >
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTiktok} className="App-logo-loader" alt="logo"/>
-            </div>
-            <div
-                style={{
-                    height: 70,
-                    width: 70,
-                    borderRadius: '50%',
-                    backgroundColor: '#802030',
-                    display:"flex"
-                }}
-            >
-                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoFacebook} className="App-logo-loader" alt="logo"/>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </Planet>
+        <div
+            style={{
+                height: 70,
+                width: 70,
+                borderRadius: '50%',
+                backgroundColor: '#802030',
+                display: "flex"
+            }}
+        >
+            <a href={"https://www.youtube.com/@meetup_tv"} target={"_blank"}>
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoYoutube}
+                     className="App-logo-loader" alt="logo"/></a>
+        </div>
+        <div
+            style={{
+                height: 70,
+                width: 70,
+                borderRadius: '50%',
+                backgroundColor: '#802030',
+                display: "flex"
+            }}
+        >
+            <a href={"https://www.instagram.com/meetup_tv"} target={"_blank"}>
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoInsta}
+                     className="App-logo-loader" alt="logo"/></a>
+        </div>
+        <div
+            style={{
+                height: 70,
+                width: 70,
+                borderRadius: '50%',
+                backgroundColor: '#802030',
+                display: "flex"
+            }}
+        >
+            <a href={"https://www.tiktok.com/@meetup.tv"} target={"_blank"}>
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTiktok}
+                     className="App-logo-loader" alt="logo"/></a>
+        </div>
+        <div
+            style={{
+                height: 70,
+                width: 70,
+                borderRadius: '50%',
+                backgroundColor: '#802030',
+                display: "flex"
+            }}
+        >
+            <a href={"https://www.facebook.com/meetupttv/"} target={"_blank"}>
+                <img style={{display: "block", margin: "auto", height: "50px"}} src={logoFacebook}
+                     className="App-logo-loader" alt="logo"/></a>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+</Planet>
     );
 }
 
