@@ -1,9 +1,10 @@
 import React from "react";
 import { Planet } from 'react-planet';
+import MainButton from "./MainButton";
 function Nav() {
     return (
         <Planet
-            centerContent={<YourButton0 />}
+            centerContent={<MainButton />}
             hideOrbit
             autoClose
             orbitRadius={60}
