@@ -4,6 +4,7 @@ import './App.css';
 
 const HeaderComponent = React.lazy(() => import('./component/Header'));
 const PlayerComponent = React.lazy(() => import('./component/Player'));
+const NavComponent = React.lazy(() => import('./component/Nav'));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         }>
             <HeaderComponent />
             <PlayerComponent />
+            <NavComponent />
         </Suspense>
     </div>
   );
