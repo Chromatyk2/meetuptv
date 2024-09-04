@@ -15,7 +15,7 @@ function Player() {
             }).then(function(response) {
                 console.log(response);
             Axios.get(
-                'https://api.twitch.tv/helix/streams?user_login=ballasta_tv',
+                'https://api.twitch.tv/helix/streams?user_login=asarhell',
                 {
                     headers: {
                         'Authorization': `Bearer ` + response.data.access_token,
@@ -33,7 +33,7 @@ function Player() {
                 <div className="twitch">
                     <div className="twitch-video">
                         <iframe
-                            src="https://player.twitch.tv/?channel=ballasta_tv&parent=meetuptv.netlify.app&autoplay=true&muted=false"
+                            src="https://player.twitch.tv/?channel=asarhell&parent=meetuptv.netlify.app&autoplay=true&muted=false"
                             frameBorder="0"
                             scrolling="no"
                             allowFullScreen="true"
@@ -45,7 +45,7 @@ function Player() {
                         <iframe
                             frameBorder="0"
                             scrolling="no"
-                            src="https://www.twitch.tv/embed/chromatyk/chat?parent=meetuptv.netlify.app"
+                            src="https://www.twitch.tv/embed/asarhell/chat?parent=meetuptv.netlify.app"
                             height="100%"
                             width="100%">
                         </iframe>
