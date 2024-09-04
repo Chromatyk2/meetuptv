@@ -2,7 +2,7 @@ import React from "react";
 import { Planet } from 'react-planet';
 import MainButton from "./MainButton";
 import logo from "../social-networks.png";
-import logoTwitch from "../social-tic.png";
+import logoTwitch from "../tic.png";
 function Nav() {
     return (
         <Planet
