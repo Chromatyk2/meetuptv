@@ -23,9 +23,8 @@ function Nav() {
                     }}
                     className={"mainPlanet"}
                 >
-                    <a href={"https://www.twitch.tv/meetup_tv"} target={"_blank"}>
-                        <img style={{display: "block", margin: "auto", height: "60px"}} src={logo}
-                             className="App-logo-loader" alt="logo"/></a>
+                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logo}
+                         className="App-logo-loader" alt="logo"/>
                 </div>
             }
             open
@@ -40,11 +39,14 @@ function Nav() {
                     width: 70,
                     borderRadius: '50%',
                     backgroundColor: '#802030',
-                    display:"flex"
+                    display: "flex",
+                    justifyContent:"center",
+                    alignItems:"center"
                 }}
             >
                 <a href={"https://www.twitch.tv/meetup_tv"} target={"_blank"}>
-                    <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTwitch} className="App-logo-loader" alt="logo"/>
+                    <img style={{display: "block", margin: "auto", height: "50px"}} src={logoTwitch}
+                         className="App-logo-loader" alt="logo"/>
                 </a>
             </div>
         <div
@@ -53,7 +55,9 @@ function Nav() {
                 width: 70,
                 borderRadius: '50%',
                 backgroundColor: '#802030',
-                display: "flex"
+                display: "flex",
+                justifyContent:"center",
+                alignItems:"center"
             }}
         >
             <a href={"https://www.youtube.com/@meetup_tv"} target={"_blank"}>
@@ -66,7 +70,9 @@ function Nav() {
                 width: 70,
                 borderRadius: '50%',
                 backgroundColor: '#802030',
-                display: "flex"
+                display: "flex",
+                justifyContent:"center",
+                alignItems:"center"
             }}
         >
             <a href={"https://www.instagram.com/meetup_tv"} target={"_blank"}>
@@ -79,7 +85,9 @@ function Nav() {
                 width: 70,
                 borderRadius: '50%',
                 backgroundColor: '#802030',
-                display: "flex"
+                display: "flex",
+                justifyContent:"center",
+                alignItems:"center"
             }}
         >
             <a href={"https://www.tiktok.com/@meetup.tv"} target={"_blank"}>
@@ -92,7 +100,9 @@ function Nav() {
                 width: 70,
                 borderRadius: '50%',
                 backgroundColor: '#802030',
-                display: "flex"
+                display: "flex",
+                justifyContent:"center",
+                alignItems:"center"
             }}
         >
             <a href={"https://www.facebook.com/meetupttv/"} target={"_blank"}>
