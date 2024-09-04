@@ -6,7 +6,7 @@ import logoTwitch from "../twitch.png";
 import logoYoutube from "../youtube.png";
 import logoInsta from "../instagram.png";
 import logoFacebook from "../facebook.png";
-import logoTiktok from "../tic-tac.png";
+import logoTiktok from "../tik-tok.png";
 function Nav() {
     return (
         <Planet
