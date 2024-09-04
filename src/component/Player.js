@@ -6,17 +6,24 @@ function Player() {
     const [stream, setStream] = useState(null);
 
     useEffect(() => {
-        Axios.get(
-            'https://api.twitch.tv/helix/streams?user_login=Chromatyk',
+        Axios.post(
+            'https://id.twitch.tv/oauth2/token',
             {
-                headers:{
-                    'Authorization': `Bearer p09h2c299pn8ojiro3aezbh14bp7wv`,
-                    'Client-Id': '4srh1li6udcsg3j7ej1kyphbl33n7o'
-                }
-            }
-        ).then(function(response){
-            setStream(response.data);
-        })
+                client_id:'4srh1li6udcsg3j7ej1kyphbl33n7o',
+                client_secret:'p09h2c299pn8ojiro3aezbh14bp7wv',
+                grant_type:"client_credentials"
+            })
+        // Axios.get(
+        //     'https://api.twitch.tv/helix/streams?user_login=Chromatyk',
+        //     {
+        //         headers:{
+        //             'Authorization': `Bearer p09h2c299pn8ojiro3aezbh14bp7wv`,
+        //             'Client-Id': '4srh1li6udcsg3j7ej1kyphbl33n7o'
+        //         }
+        //     }
+        // ).then(function(response){
+        //     setStream(response.data);
+        // })
     }, [])
     return (
         <>
