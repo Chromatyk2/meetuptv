@@ -8,17 +8,19 @@ const NavComponent = React.lazy(() => import('./component/Nav'));
 
 function App() {
   return (
-    <div className="App">
-        <Suspense fallback={
-            <div className="App-loader">
-                <img src={logo} className="App-logo-loader" alt="logo"/>
-            </div>
-        }>
-            <HeaderComponent />
-            <PlayerComponent />
-            <NavComponent />
-        </Suspense>
-    </div>
+      <>
+          <NavComponent />
+          <div className="App">
+              <Suspense fallback={
+                  <div className="App-loader">
+                      <img src={logo} className="App-logo-loader" alt="logo"/>
+                  </div>
+              }>
+                  <HeaderComponent />
+                  <PlayerComponent />
+              </Suspense>
+          </div>
+      </>
   );
 }
 

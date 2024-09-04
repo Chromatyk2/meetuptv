@@ -4,20 +4,40 @@ import MainButton from "./MainButton";
 function Nav() {
     return (
         <Planet
-            centerContent={<MainButton />}
-            hideOrbit
+            centerContent={
+                <div
+                    style={{
+                        height: 100,
+                        width: 100,
+                        borderRadius: '50%',
+                        backgroundColor: '#1da8a4',
+                    }}
+                />
+            }
+            open
             autoClose
-            orbitRadius={60}
-            bounceOnClose
-            rotation={105}
-            // the bounce direction is minimal visible
-            // but on close it seems the button wobbling a bit to the bottom
-            bounceDirection="BOTTOM"
+            orbitRadius={120}
+            rotation={30}
         >
-            <div />
-            <div />
-            <div />
-            <div />
+            <div></div>
+            <div></div>
+            <div></div>
+            <div
+                style={{
+                    height: 70,
+                    width: 70,
+                    borderRadius: '50%',
+                    backgroundColor: '#9257ad',
+                }}
+            />
+            <div
+                style={{
+                    height: 70,
+                    width: 70,
+                    borderRadius: '50%',
+                    backgroundColor: '#9257ad',
+                }}
+            />
         </Planet>
     );
 }
