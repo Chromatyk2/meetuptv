@@ -27,8 +27,6 @@ function Nav() {
             rotation={70}
             hideOrbit={true}
             bounce={true}
-            bounceRadius={10}
-            bounceDirection={"TOP"}
         >
             <div
                 style={{
