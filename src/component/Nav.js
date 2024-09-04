@@ -1,6 +1,7 @@
 import React from "react";
 import { Planet } from 'react-planet';
 import MainButton from "./MainButton";
+import logo from "../social-networks.png";
 function Nav() {
     return (
         <Planet
@@ -11,12 +12,12 @@ function Nav() {
                         width: 100,
                         borderRadius: '50%',
                         backgroundColor: '#ff6254',
-                        display:"block",
-                        margin:"auto",
+                        display: "block",
+                        margin: "auto",
                         marginTop: "70px"
                     }}
                 >
-                    X
+                    <img src={logo} className="App-logo-loader" alt="logo"/>
                 </div>
             }
             open
