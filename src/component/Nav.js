@@ -2,6 +2,7 @@ import React from "react";
 import { Planet } from 'react-planet';
 import MainButton from "./MainButton";
 import logo from "../social-networks.png";
+import logoTwitch from "../social-tic.png";
 function Nav() {
     return (
         <Planet
@@ -18,7 +19,8 @@ function Nav() {
                     }}
                     className={"mainPlanet"}
                 >
-                    <img style={{display:"block",margin:"auto",height:"60px"}} src={logo} className="App-logo-loader" alt="logo"/>
+                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logo}
+                         className="App-logo-loader" alt="logo"/>
                 </div>
             }
             open
@@ -32,7 +34,17 @@ function Nav() {
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
-                    backgroundColor: '#9257ad',
+                    backgroundColor: '#802030',
+                }}
+            >
+                <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTwitch} className="App-logo-loader" alt="logo"/>
+            </div>
+            <div
+                style={{
+                    height: 70,
+                    width: 70,
+                    borderRadius: '50%',
+                    backgroundColor: '#802030',
                 }}
             />
             <div
@@ -40,7 +52,7 @@ function Nav() {
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
-                    backgroundColor: '#9257ad',
+                    backgroundColor: '#802030',
                 }}
             />
             <div
@@ -48,7 +60,7 @@ function Nav() {
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
-                    backgroundColor: '#9257ad',
+                    backgroundColor: '#802030',
                 }}
             />
             <div
@@ -56,15 +68,7 @@ function Nav() {
                     height: 70,
                     width: 70,
                     borderRadius: '50%',
-                    backgroundColor: '#9257ad',
-                }}
-            />
-            <div
-                style={{
-                    height: 70,
-                    width: 70,
-                    borderRadius: '50%',
-                    backgroundColor: '#9257ad',
+                    backgroundColor: '#802030',
                 }}
             />
             <div></div>
