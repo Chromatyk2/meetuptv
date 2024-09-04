@@ -12,18 +12,20 @@ function Player() {
                 client_id:'4srh1li6udcsg3j7ej1kyphbl33n7o',
                 client_secret:'p09h2c299pn8ojiro3aezbh14bp7wv',
                 grant_type:"client_credentials"
-            }).then(function(response){
+            }).then(function(response) {
+                console.log(response);
             Axios.get(
                 'https://api.twitch.tv/helix/streams?user_login=Chromatyk',
                 {
-                    headers:{
-                        'Authorization': `Bearer`+response.access_token,
+                    headers: {
+                        'Authorization': `Bearer` + response.access_token,
                         'Client-Id': '4srh1li6udcsg3j7ej1kyphbl33n7o'
                     }
                 }
-            ).then(function(response){
+            ).then(function (response) {
                 setStream(response.data);
             })
+        })
     }, [])
     return (
         <>
