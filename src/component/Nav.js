@@ -16,12 +16,9 @@ function Nav() {
             }
             open
             autoClose
-            orbitRadius={120}
-            rotation={30}
+            orbitRadius={80}
+            rotation={70}
         >
-            <div></div>
-            <div></div>
-            <div></div>
             <div
                 style={{
                     height: 70,
@@ -38,6 +35,33 @@ function Nav() {
                     backgroundColor: '#9257ad',
                 }}
             />
+            <div
+                style={{
+                    height: 70,
+                    width: 70,
+                    borderRadius: '50%',
+                    backgroundColor: '#9257ad',
+                }}
+            />
+            <div
+                style={{
+                    height: 70,
+                    width: 70,
+                    borderRadius: '50%',
+                    backgroundColor: '#9257ad',
+                }}
+            />
+            <div
+                style={{
+                    height: 70,
+                    width: 70,
+                    borderRadius: '50%',
+                    backgroundColor: '#9257ad',
+                }}
+            />
+            <div></div>
+            <div></div>
+            <div></div>
         </Planet>
     );
 }

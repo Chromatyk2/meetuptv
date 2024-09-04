@@ -9,7 +9,6 @@ const NavComponent = React.lazy(() => import('./component/Nav'));
 function App() {
   return (
       <>
-          <NavComponent />
           <div className="App">
               <Suspense fallback={
                   <div className="App-loader">
@@ -18,6 +17,7 @@ function App() {
               }>
                   <HeaderComponent />
                   <PlayerComponent />
+                  <NavComponent />
               </Suspense>
           </div>
       </>
