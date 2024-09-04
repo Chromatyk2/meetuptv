@@ -10,7 +10,7 @@ function Player() {
             'https://api.twitch.tv/helix/streams?user_login=Chromatyk',
             {
                 headers:{
-                    'Authorization': `Bearer ${cookies.token.access_token}`,
+                    'Authorization': `Bearer p09h2c299pn8ojiro3aezbh14bp7wv`,
                     'Client-Id': process.env.REACT_APP_CLIENT_ID
                 }
             }
