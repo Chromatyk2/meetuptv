@@ -27,7 +27,6 @@ function Nav() {
                          className="App-logo-loader" alt="logo"/>
                 </div>
             }
-            open
             autoClose
             orbitRadius={130}
             rotation={70}
