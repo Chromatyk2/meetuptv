@@ -55,6 +55,130 @@
 .mainPlanet:hover{
     cursor: pointer;
 }
+.navbar {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    width: 350px;
+}
+
+.navbar ul li {
+    list-style: none;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navbar ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s ease-in;
+    color: var(--clr);
+}
+
+.navbar ul li.active a .icon {
+    transform: translateY(-32px);
+}
+
+.navbar ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s ease-in;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navbar ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.bubble {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    /* background-color: #29fd53; */
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s ease-in;
+}
+
+.bubble::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.bubble::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.navbar ul li:nth-child(1).active~.bubble {
+    transform: translateX(calc(70px * 0));
+    background-color: #ddfd29;
+}
+
+.navbar ul li:nth-child(2).active~.bubble {
+    transform: translateX(calc(70px * 1));
+    background-color: #fddd29;
+}
+
+.navbar ul li:nth-child(3).active~.bubble {
+    transform: translateX(calc(70px * 2));
+    background-color: #29fdbd;
+}
+
+.navbar ul li:nth-child(4).active~.bubble {
+    transform: translateX(calc(70px * 3));
+    background-color: #15ddf7;
+}
+
+.navbar ul li:nth-child(5).active~.bubble {
+    transform: translateX(calc(70px * 4));
+    background-color: #15f733;
+}
 @media screen and (min-width: 850px) {
     .twitch {
         position: relative;
