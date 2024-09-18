@@ -31,7 +31,7 @@ function NavBar() {
                     <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
                          className="App-logo-loader" alt="logo"/>
                     </span>
-                        <span className="text">Home</span>
+                        <span className="text">Acceuil</span>
                     </a>
                 </li>
                 <li className="list">
@@ -40,7 +40,7 @@ function NavBar() {
                     <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
                          className="App-logo-loader" alt="logo"/>
                     </span>
-                    <span className="text">Profile</span>
+                    <span className="text">Planing</span>
                 </a>
                 </li>
                 <li className="list">
@@ -49,7 +49,7 @@ function NavBar() {
                     <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
                          className="App-logo-loader" alt="logo"/>
                     </span>
-                    <span className="text">Message</span>
+                    <span className="text">Equipe</span>
                 </a>
                 </li>
                 <li className="list">
@@ -58,7 +58,7 @@ function NavBar() {
                     <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
                          className="App-logo-loader" alt="logo"/>
                     </span>
-                    <span className="text">Photos</span>
+                    <span className="text">News</span>
                 </a>
                 </li>
                 <li className="list">
@@ -67,7 +67,7 @@ function NavBar() {
                     <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
                          className="App-logo-loader" alt="logo"/>
                     </span>
-                    <span className="text">Settings</span>
+                    <span className="text">Contact</span>
                 </a>
                 </li>
                 <div className="bubble"></div>
