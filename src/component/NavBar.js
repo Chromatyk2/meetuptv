@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logoContact from "../courrier.png";
-import logoHome from "../equipe.png";
-import logoNew from "../equipe.png";
+import logoHome from "../accueil.png";
+import logoNew from "../journal.png";
 import logoTeam from "../equipe.png";
 import logoPlaning from "../time-and-calendar.png";
 
