@@ -56,19 +56,23 @@
     cursor: pointer;
 }
 .navbar {
-    width: 400px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
     background-color: #fff;
     border-radius: 10px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    margin-bottom: 40px;
 }
 
 .navbar ul {
     display: flex;
-    width: 350px;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
 }
 
 .navbar ul li {
@@ -156,27 +160,27 @@
 }
 
 .navbar ul li:nth-child(1).active~.bubble {
-    transform: translateX(calc(70px * 0));
+    transform: translateX(calc(-220px));
     background-color: #ddfd29;
 }
 
 .navbar ul li:nth-child(2).active~.bubble {
-    transform: translateX(calc(70px * 1));
+    transform: translateX(calc(-110px));
     background-color: #fddd29;
 }
 
 .navbar ul li:nth-child(3).active~.bubble {
-    transform: translateX(calc(70px * 2));
+    transform: translateX(calc(110px * 0));
     background-color: #29fdbd;
 }
 
 .navbar ul li:nth-child(4).active~.bubble {
-    transform: translateX(calc(70px * 3));
+    transform: translateX(calc(110px * 1));
     background-color: #15ddf7;
 }
 
 .navbar ul li:nth-child(5).active~.bubble {
-    transform: translateX(calc(70px * 4));
+    transform: translateX(calc(110px * 2));
     background-color: #15f733;
 }
 @media screen and (min-width: 850px) {
