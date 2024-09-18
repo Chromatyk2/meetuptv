@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from "./component/NavBar";
 
 const HeaderComponent = React.lazy(() => import('./component/Header'));
 const PlayerComponent = React.lazy(() => import('./component/Player'));
+const NavBar = React.lazy(() => import('./component/NavBar'));
 const NavComponent = React.lazy(() => import('./component/Nav'));
 
 function App() {
