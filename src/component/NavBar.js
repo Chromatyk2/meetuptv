@@ -1,18 +1,26 @@
-import React,{useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
+function ScriptNav({lat, long}) {
+    return (
+        <>
+            <script async src="map-api.js" onLoad={() => console.log('script loaded')} />
+            <div id="map" data-lat={lat} data-long={long} />
+        </>
+    );
+}
 function NavBar() {
-    <script>
+    useEffect(() => {
         const list = document.querySelectorAll(".list");
 
         function activeLink() {
-        list.forEach((item) => item.classList.remove('active'));
-        this.classList.add('active');
-    };
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+        };
 
         list.forEach((item) => {
-        item.addEventListener('click', activeLink)
-    });
-    </script>
+            item.addEventListener('click', activeLink)
+        });
+    }, []);
     return (
         <div className="navbar">
             <ul>
