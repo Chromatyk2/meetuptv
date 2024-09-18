@@ -1,5 +1,9 @@
 import React, {useEffect, useState} from 'react';
+import logoContact from "../courrier.png";
+import logoHome from "../equipe.png";
+import logoNew from "../equipe.png";
 import logoTeam from "../equipe.png";
+import logoPlaning from "../time-and-calendar.png";
 
 function ScriptNav({lat, long}) {
     return (
@@ -28,7 +32,7 @@ function NavBar() {
                 <li className="list active">
                     <a href={"#"}>
                     <span className="icon">
-                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
+                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoHome}
                          className="App-logo-loader" alt="logo"/>
                     </span>
                         <span className="text">Acceuil</span>
@@ -37,7 +41,7 @@ function NavBar() {
                 <li className="list">
                 <a href={"#"}>
                     <span className="icon">
-                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
+                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoPlaning}
                          className="App-logo-loader" alt="logo"/>
                     </span>
                     <span className="text">Planing</span>
@@ -55,7 +59,7 @@ function NavBar() {
                 <li className="list">
                 <a href={"#"}>
                     <span className="icon">
-                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
+                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoNew}
                          className="App-logo-loader" alt="logo"/>
                     </span>
                     <span className="text">News</span>
@@ -64,7 +68,7 @@ function NavBar() {
                 <li className="list">
                 <a href={"#"}>
                     <span className="icon">
-                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoTeam}
+                    <img style={{display: "block", margin: "auto", height: "60px"}} src={logoContact}
                          className="App-logo-loader" alt="logo"/>
                     </span>
                     <span className="text">Contact</span>
