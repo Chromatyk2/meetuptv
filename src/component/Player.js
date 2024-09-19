@@ -35,7 +35,7 @@ function Player() {
             {load ?
 
                 <div className="App-loader">
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} className="App-logo-loader" alt="logo"/>
                 </div>
                 :
                 <div className="twitch">
