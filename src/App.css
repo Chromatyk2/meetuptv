@@ -146,6 +146,18 @@ a.linkUnderStream {
     filter: drop-shadow(10px 10px 10px #ff6254);
     cursor: pointer;
 }
+.footer {
+    background-color: #ff6254;
+    height: 100px;
+    text-align: center;
+    line-height: 40px;
+    color: #F7E8DE;
+    margin-top: 60px;
+}
+
+.menu-icon {
+    display: none;
+}
 @media screen and (min-width: 850px) {
     .twitch {
         position: relative;
@@ -159,5 +171,40 @@ a.linkUnderStream {
     .twitch .twitch-chat {
         height: auto;
         width: 25%;
+    }
+}
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top:20px;
+        z-index: 10;
+    }
+
+    .nav-elements {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        background-color: #fef7e5;
+        width: 0px;
+        height: calc(100vh);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+
+    .nav-elements.active {
+        width: 270px;
+    }
+
+    .nav-elements ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-elements ul li {
+        margin-right: unset;
+        margin-top: 22px;
     }
 }

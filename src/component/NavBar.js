@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom'
 import logo from '../logo.svg';
 import logoText from '../Typogramme_Rouge.svg';
+import burger from '../menu-burger.png'
 
 function NavBar() {
+    const [showNavbar, setShowNavbar] = useState(false)
+
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar)
+    }
     return (
         <nav className="navbar">
             <div className="container">
@@ -11,8 +17,11 @@ function NavBar() {
                     <img src={logo} alt="logo"/>
                     <img src={logoText} alt="logo"/>
                 </div>
-                <div className="nav-elements">
-                <ul>
+                <div className="menu-icon" onClick={handleShowNavbar}>
+                    <img style={{width: "30px"}} src={burger} alt="logo"/>
+                </div>
+                <div className={`nav-elements  ${showNavbar && 'active'}`}>
+                    <ul>
                         <li>
                             <NavLink to="/">Accueil</NavLink>
                         </li>
@@ -25,9 +34,6 @@ function NavBar() {
                         <li>
                             <NavLink to="/planing">Le planing</NavLink>
                         </li>
-                        {/*<li>*/}
-                        {/*    <NavLink to="/contact">Contact</NavLink>*/}
-                        {/*</li>*/}
                     </ul>
                 </div>
             </div>
