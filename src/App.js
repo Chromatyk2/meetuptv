@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Player from "./component/Player";
 
 const HeaderComponent = React.lazy(() => import('./component/Header'));
-const PlayerComponent = React.lazy(() => import('./component/Player'));
 const NavBar = React.lazy(() => import('./component/NavBar'));
 const NavComponent = React.lazy(() => import('./component/Nav'));
 const Footer = React.lazy(() => import('./component/footer'));
@@ -19,7 +19,7 @@ function App() {
               }>
                   <NavBar />
                   <HeaderComponent />
-                  <PlayerComponent />
+                  <Player />
                   <NavComponent />
                   <Footer />
               </Suspense>
