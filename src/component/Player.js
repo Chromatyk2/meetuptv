@@ -1,65 +1,86 @@
-import React,{useState, useEffect} from 'react';
-import Axios from 'axios'
-import logo from "../logo.svg";
+import React from 'react';
+import logoTwitch from '../twitch.png'
+import logoReplay from '../film.png'
+import logoEuro from '../euro.png'
 
 
-function Player() {
-    const [stream, setStream] = useState(null);
-    const [load, setLoad] = useState(true);
-
-    useEffect(() => {
-        Axios.post(
-            'https://id.twitch.tv/oauth2/token',
-            {
-                client_id:'4srh1li6udcsg3j7ej1kyphbl33n7o',
-                client_secret:'p09h2c299pn8ojiro3aezbh14bp7wv',
-                grant_type:"client_credentials"
-            }).then(function(response) {
-                console.log(response);
-            Axios.get(
-                'https://api.twitch.tv/helix/streams?user_login=meetup_tv',
-                {
-                    headers: {
-                        'Authorization': `Bearer ` + response.data.access_token,
-                        'Client-Id': '4srh1li6udcsg3j7ej1kyphbl33n7o'
-                    }
-                }
-            ).then(function (response) {
-                setStream(response.data);
-                setLoad(false)
-            })
-        })
-    }, [])
+function Player(props) {
     return (
         <>
-            {load ?
-
-                <div className="App-loader">
-                    <img src={logo} className="App-logo-loader" alt="logo"/>
+            <div className="twitch">
+                <div className="twitch-video">
+                    <iframe
+                        src="https://player.twitch.tv/?channel=meetup_tv&parent=meetuptv.netlify.app&autoplay=true&muted=false"
+                        frameBorder="0"
+                        scrolling="no"
+                        allowFullScreen="true"
+                        height="720"
+                        width="1280">
+                    </iframe>
                 </div>
-                :
-                <div className="twitch">
-                    <div className="twitch-video">
-                        <iframe
-                            src="https://player.twitch.tv/?channel=meetup_tv&parent=meetuptv.netlify.app&autoplay=true&muted=false"
-                            frameBorder="0"
-                            scrolling="no"
-                            allowFullScreen="true"
-                            height="720"
-                            width="1280">
-                        </iframe>
-                    </div>
-                    <div className="twitch-chat">
-                        <iframe
-                            frameBorder="0"
-                            scrolling="no"
-                            src="https://www.twitch.tv/embed/meetup_tv/chat?parent=meetuptv.netlify.app"
-                            height="100%"
-                            width="100%">
-                        </iframe>
-                    </div>
+                <div className="twitch-chat">
+                    <iframe
+                        frameBorder="0"
+                        scrolling="no"
+                        src="https://www.twitch.tv/embed/meetup_tv/chat?parent=meetuptv.netlify.app"
+                        height="100%"
+                        width="100%">
+                    </iframe>
                 </div>
-            }
+            </div>
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "50px",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                marginTop: "50px"
+            }}>
+                <a href={"https://www.twitch.tv/meetup_tv"} target={"_blank"} className={"linkUnderStream"}>
+                    <div>
+                        <img className={"linkUnderStreamImg"} src={logoTwitch}/>
+                    </div>
+                    <div style={{width: "300px"}}>
+                        <p className={"linkUnderStreamTxt"}><span style={{fontSize: "20px", fontWeight: "bold"}}>Abonne-toi ! </span><br/> Abonne-toi à
+                            la chaine pour nous soutenir et obtenir pleins d'avantages ! Fait partis de la MeetUp Family ! </p>
+                    </div>
+                </a>
+                <a href={"https://www.twitch.tv/meetup_tv/videos"} target={"_blank"} className={"linkUnderStream"}>
+                    <div>
+                        <img className={"linkUnderStreamImg"} src={logoReplay}/>
+                    </div>
+                    <div style={{width: "300px"}}>
+                        <p className={"linkUnderStreamTxt"}><span style={{fontSize: "20px", fontWeight: "bold"}}>Les VODs </span><br/> T'as raté un
+                            stream ? Pas grave viens regarder les vods en accès immédiat après chaque stream !</p>
+                    </div>
+                </a>
+                <a href={"https://streamlabs.com/meetup_tv/tip"} target={"_blank"} className={"linkUnderStream"}>
+                    <div>
+                        <img className={"linkUnderStreamImg"} src={logoEuro}/>
+                    </div>
+                    <div style={{width: "300px"}}>
+                        <p className={"linkUnderStreamTxt"}><span style={{fontSize: "20px", fontWeight: "bold"}}>Soutiens nous ! </span><br/>MeetUpTV est une assocition a but non lucratif, chaque dons nous aide à créer de nouveau projets !</p>
+                    </div>
+                </a>
+            </div>
+            {/*<a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>">*/}
+            {/*    Twitter*/}
+            {/*</a>*/}
+            {/*<a href="https://www.facebook.com/sharer/sharer.php?u=<URL>">*/}
+            {/*    Facebook*/}
+            {/*</a>*/}
+            {/*<a href="https://reddit.com/submit?url=<URL>&title=<TITLE>">*/}
+            {/*    Reddit*/}
+            {/*</a>*/}
+            {/*<a href="https://news.ycombinator.com/submitlink?u=<URL>&t=<TITLE>">*/}
+            {/*    Hacker News*/}
+            {/*</a>*/}
+            {/*<a href="https://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>">*/}
+            {/*    LinkedIn*/}
+            {/*</a>*/}
+            {/*<a href="mailto:?subject=<SUBJECT>&body=<BODY>">*/}
+            {/*    Email*/}
+            {/*</a>*/}
         </>
 
     );
