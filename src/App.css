@@ -71,7 +71,7 @@
     height: 60px;
     background-color: #F7E8DE;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -135,6 +135,15 @@ a.linkUnderStream {
 .linkUnderStream:hover{
     background-color: #ff6254;
     color: #F7E8DE;
+    cursor: pointer;
+}
+.linkToStreamer{
+    font-weight: bold;
+    color:#ff6254;
+    text-decoration: auto;
+}
+.linkToStreamer:hover{
+    filter: drop-shadow(10px 10px 10px #ff6254);
     cursor: pointer;
 }
 @media screen and (min-width: 850px) {

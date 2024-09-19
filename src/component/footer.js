@@ -3,8 +3,9 @@ import React from "react";
 
 function Footer() {
     return (
-        <div className={"header"}>
-            <img src={logotype} className="App-logo-loader" alt="logo"/>
+        <div className={"footer"}>
+            <p>Copyright MeetupTV ©2024</p>
+            <p>Site développé par <a href={"https://twitch.tv/chromatyk"}>Chromatyk</a></p>
         </div>
     );
 }
