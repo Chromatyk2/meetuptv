@@ -1,9 +1,11 @@
 import React,{useState, useEffect} from 'react';
 import Axios from 'axios'
+import logo from "../logo.svg";
 
 
 function Player() {
     const [stream, setStream] = useState(null);
+    const [load, setLoad] = useState(true);
 
     useEffect(() => {
         Axios.post(
@@ -24,12 +26,18 @@ function Player() {
                 }
             ).then(function (response) {
                 setStream(response.data);
+                setLoad(false)
             })
         })
     }, [])
     return (
         <>
-            {stream &&
+            {load ?
+
+                <div className="App-loader">
+                    <img src={logo} className="App-logo-loader" alt="logo"/>
+                </div>
+                :
                 <div className="twitch">
                     <div className="twitch-video">
                         <iframe
