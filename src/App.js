@@ -13,7 +13,7 @@ function App() {
       <>
           <div className="App">
               <Suspense fallback={
-                  <div className="App-loader">
+                  <div>
                       <img src={logo} className="App-logo-loader" alt="logo"/>
                   </div>
               }>
