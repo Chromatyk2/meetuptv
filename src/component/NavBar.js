@@ -5,8 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Link} from "react-router-dom";
 import logo from '../logo.svg';
 
-function NavBar(props) {
-    const pseudo = props.cookies.user.data[0].login;
+function NavBar() {
     const [expanded, setExpanded] = useState(false);
     return (
 
