@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import NavBar from "./component/NavBar";
 import Player from "./component/Player";
