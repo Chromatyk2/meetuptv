@@ -17,11 +17,11 @@ function App() {
                       <img src={logo} className="App-logo-loader" alt="logo"/>
                   </div>
               }>
-                  {/*<NavBar />*/}
-                  {/*<HeaderComponent />*/}
+                  <NavBar />
+                  <HeaderComponent />
                   <PlayerComponent />
-                  {/*<NavComponent />*/}
-                  {/*<Footer />*/}
+                  <NavComponent />
+                  <Footer />
               </Suspense>
           </div>
       </>
