@@ -8,7 +8,6 @@ import logo from '../logo.svg';
 function NavBar() {
     const [expanded, setExpanded] = useState(false);
     return (
-
         <Navbar expanded={expanded} bg="light" expand="lg">
             <Container fluid>
                 <Navbar.Brand><a href={"https://twitch.tv/chromatyk"}><img src={logo} alt="logo"/></a></Navbar.Brand>
